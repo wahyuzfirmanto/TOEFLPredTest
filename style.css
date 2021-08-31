@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../img/london.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 940px;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+    padding: 50px 60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.leftSide img {
+    max-width: 400px;
+}
+
+.rightSide h1{
+    text-align: center;
+}
+
+.rightSide h2, ul{
+    margin: 20px;
+}
+
+
+.rightSide ul li{
+    margin-top: 10px;
+}
+
+
+.rightSide a{
+    background-color: #fbbe4b;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.leftSide,.rightSide {
+    width: 50%;
+    
+}
+
+/*Listening Test Instruction Start*/
+
+.box{
+    width: 940px;
+    background-color: #fff;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.2);
+    min-height: 300px;
+    padding: 50px 60px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.box img{
+    max-width: 50px;
+    margin-top: 20px;
+}
+
+.box h1{
+    text-align: center;
+}
+
+.box h2{
+    margin-top: 15px;
+}
+
+
+.box p{
+    margin-top: 20px;
+}
+
+.box ul li{
+    list-style-type: none;
+}
+
+.box a{
+    background-color: #fbbe4b;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #000;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+i.fas{
+    color: #fbbe4b;
+    font-size: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    
+}
+
+#playBtn{
+    border: 0;
+    background-color: #fff;
+
+}
+
+i.fas:active{
+    color:rgba(0, 0, 0, 0.2)
+}
+
+/*Listening Test Instruction End*/
+
+/*Listening Questions Part A Start*/
+
+.firstBox {
+    display: flex;
+    flex-direction: column;
+
+    
+
+}
+
+#PlayBtn{
+    color: #fbbe4b;
+    font-size: 100px;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+button{
+    border: 0;
+    background-color: #fff;
+   
+}
+
+#boxPartA {
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+#boxPartA h2{
+    margin-bottom: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+
+#boxPartA h3{
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+.answers {
+  margin-bottom: 20px;
+  
+}
+
+.answers label{
+  display: block;
+}
+
+.Options{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px 0;
+    grid-gap: 15px;
+    }
+
+
+.Options span{
+    background-color:#ccc;
+    border-radius: 10px;
+    color: #444;
+    border: 1px solid #444;
+    padding: 10px 15px;
+    }
+
+.Question{
+    font-size: x-large;
+    text-align: center;
+    margin-top: 100px;
+    color: #fbbe4b;
+}
+
+.secondBox{
+    display: block;
+}
+
+a.btnToPartB {
+    margin-top: 100px;
+    align-content: inherit;
+    display: inline;
+}
+
+/*Listening Questions Part A End*/
