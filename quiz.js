@@ -43,34 +43,19 @@ function playPartA() {
     audioA.play();
     playBtn.style.color = "#777777";
     showQuestion();
-    pasangPilihan();
+    
   }
 
 
-
-function showQuestion(){
-  for(let i = 0; i < 30; i++){
-    $(".questionBox").append('<div class="Question"></div><div class="Options"><span></span><span></span><span></span><span></span></div>');
-  } //Ini untuk pasang 30 tempat pertanyaan dan pilihan
-  $(".secondBox").append('<a href="Listening Part A.html" class="btnToPartB">Continue to Part B</a>'); //ini untuk pasang tombol next
-  
-  $('.Question').each(function(index){
-    $(this).html("Number ");
-    $(this).append(index+1);
-  }); //Ini untuk menambah nomor soal
-
- 
-
-  };
-
-
-function pasangPilihan(){
-  $('.Options').QuesPartA.forEach(option => {
-    $('.Options span').eq(0).text(option[0]);
-    $('.Options span').eq(1).text(option[1]);
-    $('.Options span').eq(2).text(option[2]);
-    $('.Options span').eq(3).text(option[3]);
-   });
-  }
-
+  function showQuestion(){
+    for(let i = 0; i < QuesPartA.length; i++){
+        $(".questionBox").append('<div class="Question">Number '+ parseInt(i+1) +'</div>');
+        $(".questionBox").append('<div class="Options">');
+        QuesPartA[i]['option'].forEach(option => {
+            $(".questionBox").append('<span>'+option +' </span><br>');  
+        });
+        $(".questionBox").append('</div><br>'); // end Options div
+    } 
+    $(".secondBox").append('<a href="Listening Part A.html" class="btnToPartB">Continue to Part B</a>'); 
+};
 
